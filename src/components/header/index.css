@@ -1,0 +1,113 @@
+.outer-appbar{
+    color: #555555;
+    width: 100%;
+    border: 0;
+    display: block;
+    padding: 10px 0;
+    z-index: 1029;
+    box-shadow: none;
+    min-height: 50px;
+    transition: all 150ms ease 0s;
+    padding-top: 10px;
+    border-bottom: 0;
+    border-radius: 3px;
+    margin-bottom: 0;
+    top: 0;
+    left: auto;
+    right: 0;
+    margin: 0px 1px;
+}
+
+.jss88{
+    color: #555555;
+    float: left;
+    display: block;
+    padding: 0 0 0 15px;
+}
+
+.Muibutton-threedot{
+    border-radius: 30px;
+    color: #999;
+    background-color: #FFF;
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
+    min-height: auto;
+    text-align: center;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: box-shadow, transform;
+    font-weight: 400;
+}
+.threedot-span{
+    font-size: 20px;
+}
+.MuiButtonBase{
+    font-size: 18px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 12px 30px
+}
+.inputd{
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    padding: 6px 0 7px;
+    background: none;
+    color: #495057;
+    opacity: 0.6;
+
+}
+.inputf{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+    cursor: text;
+}
+
+.searchficon{
+    border-radius: 30px;
+    color: #999;
+    background-color: #FFF;
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
+    min-height: auto;
+    text-align: center;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: box-shadow, transform;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ioio{
+    width: 20px;
+    height: 20px;
+}
+.jss677{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ioionotif{
+    width: 17px;
+    height: 17px;
+    padding: 12px;
+}
+.ioiofo{
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
