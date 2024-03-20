@@ -24,7 +24,7 @@ export default function MenuBar() {
   return (
     <div className='menubar'>
       
-        <div className='creative-tim'><FaReact style={{ paddingRight: '15px', fontSize: '25px'}}/>CREATIVE TIM</div>
+        <div className='creative-tim'><FaReact style={{ paddingRight: '12px', fontSize: '35px'}}/>CREATIVE TIM</div>
         <div className={`taniaandrew ${isExpanded ? 'expanded' : ''}`} onClick={toggleExpansion} >
           <div>
           <div className='jss59'>

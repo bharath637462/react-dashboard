@@ -1,5 +1,5 @@
 .menubar{
-    width: 15%;
+    width: 260px;
     height: 100%;
     color: #FFF;
     position: fixed;
@@ -18,6 +18,21 @@
     background: #000;
     opacity: 0.8;
     z-index: -1;
+}
+
+@media (max-width: 969px) {
+    .menubar {
+        width: 260px;
+        height: 100%;
+        color: #FFF;
+        position: fixed;
+        display: flex;
+        background-image: url("https://demos.creative-tim.com/material-dashboard-pro-material-ui-v4/static/media/sidebar-2.42e96f8d.jpg");
+        flex-direction: column;
+        z-index: 1;
+        align-self: flex-end;
+
+    }
 }
 
 .creative-tim{
@@ -74,7 +89,7 @@
 }
 .icon-padding{
     padding: 15px;
-    font-size: 22px;
+    font-size: 54px;
 }
 .jss1257 {
   right: 18px;

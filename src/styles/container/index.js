@@ -11,22 +11,28 @@ export const Container = styled.div`
   flex-wrap: wrap;
 `;
 
-export const ContainerBox = styled.div`
+export const ContainerBox = styled.div  `
   padding-left: 10px;
-  width: 350px;
+  width: calc(100% / 4 - 20px); 
   height: 190px;
 
-  @media max-width:768px {
-    width: 300px;
+
+  @media (max-width: 768px) {
+    width: calc(100% - 20px); /* Subtracting 20px for padding and margin */
+    margin: 10px 0;
   }
 
-  @media (min-width:768px) and (max-width:1200px){
-    width: 400px;
+  @media (min-width: 769px) and (max-width: 1280px) {
+    width: calc(100% / 2 - 20px); /* Subtracting 20px for padding and margin */
+    margin: 10px;
   }
 
-  @media (min-width:1200px){
-    width: 350px;
+  @media (min-width: 1281px) {
+    width: calc(100% /4 - 20px); /* Subtracting 20px for padding and margin */
+    margin: 10px;
+    float: left;
   }
+
 
 
 `;
@@ -38,7 +44,7 @@ export const Container1 = styled.div`
   background: #fff;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   height: 130px;
-  width: 320px;
+  width: 100%;
 `;
 
 export const Container2 = styled.div`
@@ -102,9 +108,29 @@ export const ContainerSpaceWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
   padding-left: 20px;
+
 `;
 
 export const ContainerCustomWrapper = styled.div`
   width: ${props => props.showAltIcon ? '95%' : '85%'}; /* Example usage */
   align-self:end;
+
+
+  @media (max-width: 969px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  @media (min-width: 970px) and (max-width: 1280px) {
+    width: ${props => props.showAltIcon ? 'calc(100% - 80px)' : 'calc(100% - 260px)}'
+  }
+
+  @media (min-width: 1201px) {
+    width: ${props => props.showAltIcon ? 'calc(100% - 80px)' : 'calc(100% - 260px)}'
+}
+
+
+
 `;

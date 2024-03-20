@@ -6,15 +6,31 @@ export const SalesContainerWrapper = styled.div`
   height: 366px;
   padding-left: 20px;
   background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 export const GlobalSales = styled.div`
     display: flex;
     flex-direction: column;
     width: 40%;
+    @media (max-width: 768px) {
+        width: calc(95% - 20px)
+      }
+    
+      @media (min-width: 769px) and (max-width: 1280px) {
+        width: calc(95% - 20px)
+      }
+    
+      @media (min-width: 1281px) {
+        width: calc(45% - 20px)
+
+      }
 `;
 
 export const Location = styled.div`
+      width: 55%;
+      padding: 20px 0px;
 
 `;
 
@@ -33,37 +49,37 @@ export const MiniContainer = styled.div`
     border-radius: 3px;
     background: linear-gradient(60deg, #66bb6a, #43a047);
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0,.14), 0 7px 10px -5px rgba(76, 175, 80,.4);
-    width: 35px;
-    height: 40px;
+    width: 62px;
+    height: 65px;
 `;
 export const Countries = styled.div`
 
 `;
 export const Country = styled.div`
-    margin-top: 20px;
+    margin-top: 15px;
     border-top: 1px solid#eee;
     display: flex;
     justify-content: space-between;
     font-weight: 300;
-    textAlign: 'left' 
-
+    text-align: 'left' 
 
 `;
 
 export const Name = styled.div`
 padding-top: 10px;
 display: flex;
-width: 50%;
-gap: 100px;
-
+width:40%;
+gap: 35%;
+text-align:left;
 `;
 
 export const Stats = styled.div`
     padding-top: 10px;
     display: flex;
-    justify-content: space-between;
-    width: 30%;
-
+    // justify-content: space-between;
+    width: 40%;
+    gap:35%;
+    text-align:left;
 `;
 
 

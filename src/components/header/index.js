@@ -10,7 +10,6 @@ import { AuthContext } from "../../context/Authcontext";
 
 export default function Appbar() {
   const { showAltIcon, setShowAltIcon } = useContext(AuthContext);
-
   const handleButtonClick = useCallback(() => {
     setShowAltIcon(prevState => !prevState);
   }, [setShowAltIcon]);

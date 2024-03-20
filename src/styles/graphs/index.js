@@ -7,19 +7,41 @@ export const GraphContainerSet = styled.div`
     margin-top: 60px;
     padding: 0px 15px 0px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 `;
 
 export const OuterDiv = styled.div`
-    width: 472px;
+    width: calc(100%/3 - 20px); 
     height: 288px;
     background-color: #fff;
+    margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+        width: calc(100% - 20px);
+        justify-content: center;
+    }
+
+    @media (min-width: 769px) and (max-width: 1200px) {
+        width: calc(100% / 2 - 20px);
+        justify-content: center;
+    }
+
+    @media (min-width: 1201px) {
+        width: calc(100% / 3 - 20px);
+    }
+   
+    
 `;
 
 export const GraphContainer = styled.div`
-    width: 450px;
+    width: 95%;
     height: 158px;
     background-color:  ${props => props.bgcolor || '#00acc1'};;
     margin: -20px 10px 0px;
+    overflow-y: auto;
+    overflow-x: auto;
+
 `;  
 
 export const Topic = styled.div`

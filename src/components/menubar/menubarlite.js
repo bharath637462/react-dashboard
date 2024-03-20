@@ -12,12 +12,13 @@ import { SlGraph } from "react-icons/sl";
 import { MdDateRange } from "react-icons/md";
 import { AuthContext } from "../../context/Authcontext";
 
+
 export default function MenubarLite() {
   const { isExpanded, setIsExpanded } = useContext(AuthContext);
   return (
-    <div className='menubar' style={{width: '5%'}}>
+    <div className='menubar' style={{width: '80px'}}>
       
-    <div className='creative-tim'><FaReact style={{ paddingRight: '15px', fontSize: '25px'}}/></div>
+    <div className='creative-tim'><FaReact style={{ fontSize: '25px'}}/></div>
     <div className='taniaandrew'  >
       <div>
       <div className='jss59'>

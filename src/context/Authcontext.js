@@ -7,13 +7,15 @@ export const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [showAltIcon, setShowAltIcon] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
-
+  const [isShowMenu, setIsShowMenu] = useState(false);
 
   const value = {
     showAltIcon,
     setShowAltIcon,
     isExpanded,
-    setIsExpanded
+    setIsExpanded,
+    isShowMenu,
+    setIsShowMenu
 
   };
 

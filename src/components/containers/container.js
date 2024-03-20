@@ -8,8 +8,7 @@ import { Container, ContainerBox, Container1, Container2,
 export default function ContainerComponent(props) {
     const {backgroundcolor, boxIcon, content1, content2, bottomIcon, bottomContent } = props
   return (
-    <Container>
-      <ContainerBox>
+       <ContainerBox> 
         <Container1>
           <div style={{display: 'flex', justifyContent: 'space-between', width: '100%'}}>
             <Container2 color={ backgroundcolor } >
@@ -28,7 +27,6 @@ export default function ContainerComponent(props) {
             </ContainerSpaceWrapper>
           </div>
         </Container1>
-      </ContainerBox>
-    </Container>
+       </ContainerBox> 
   )
 }

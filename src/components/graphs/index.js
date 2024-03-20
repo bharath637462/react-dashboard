@@ -20,7 +20,7 @@ export function DailySalesGraph() {
         { day: 'S', sales: 39 },
     ];
   return (
-    <LineChart width={440} height={170} data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+    <LineChart width={400} height={150} data={data} margin={{ top: 20, right: 30, bottom: 5 }}>
         <CartesianGrid stroke="#fff" strokeOpacity={0.4} strokeDasharray="3 3" opacity={0.5}  />
             <XAxis dataKey="day" tick={{ fill: '#fff', strokeOpacity: 0.5, fontSize: 12, opacity: 0.5 }} axisLine={{ stroke: '#fff', strokeOpacity: 0.5, opacity: 0.5 }} tickLine={false} />
             <YAxis tick={{ fill: '#fff', strokeOpacity: 0.5, fontSize: 12, opacity: 0.5 }} axisLine={{ stroke: '#fff', strokeOpacity: 0.5, opacity: 0.5 }} tickLine={false}  tickCount={5} domain={[0, 40]}/>
@@ -45,7 +45,7 @@ export function EmailSubscriptionGraph() {
         { month: 'D', subscriptions: 800 },
     ];  
   return (
-<BarChart width={440} height={170} data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+<BarChart width={440} height={150} data={data} margin={{ top: 20, right: 30, bottom: 5 }}>
     <CartesianGrid stroke="#fff" strokeOpacity={0.4} strokeDasharray="3 3" opacity={0.5} />
     <XAxis dataKey="month" tick={{ fill: '#fff', strokeOpacity: 0.5, fontSize: 12, opacity: 0.5 }} axisLine={{ stroke: '#fff', strokeOpacity: 0.5, opacity: 0.5 }} tickLine={false} />
     <YAxis tick={{ fill: '#fff', strokeOpacity: 0.5, fontSize: 12, opacity: 0.5 }} axisLine={{ stroke: '#fff', strokeOpacity: 0.5, opacity: 0.5 }} tickLine={false} tickCount={5} domain={[0, 800]} />
@@ -68,7 +68,7 @@ export function CompletedTasksGraph() {
         { time: '9am', subscriptions: 180 },
     ];  
   return (
-    <LineChart width={440} height={170} data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+    <LineChart width={440} height={150} data={data} margin={{ top: 20, right: 30, bottom: 5 }}>
         <CartesianGrid stroke="#fff" strokeOpacity={0.4} strokeDasharray="3 3" opacity={0.5}  />
             <XAxis dataKey="time" tick={{ fill: '#fff', strokeOpacity: 0.5, fontSize: 12, opacity: 0.5 }} axisLine={{ stroke: '#fff', strokeOpacity: 0.5, opacity: 0.5 }} tickLine={false} />
             <YAxis tick={{ fill: '#fff', strokeOpacity: 0.5, fontSize: 12, opacity: 0.5 }} axisLine={{ stroke: '#fff', strokeOpacity: 0.5, opacity: 0.5 }} tickLine={false}  tickCount={5} domain={[0, 800]}/>

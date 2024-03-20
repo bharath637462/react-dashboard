@@ -25,30 +25,29 @@ export default function SalesContainer() {
         <GlobalSales>
             <TopContainer>
                 <MiniContainer>
-                    <TbWorld style={{ color: '#fff', fontSize: 'xxx-large'}}/>
+                    <TbWorld style={{ color: '#fff', fontSize: '50px'}}/>
                 </MiniContainer>
                 <TopContaierText>Global Sales by Top Locations</TopContaierText>
             </TopContainer>
             <Countries>
                 {CountriesData.map((country, index) => (
                     <Country key={index}>
-                    <Name style={{paddingTop: '10px'}}>
-                    <img src={country.image} alt="Description of the image" />
-                    <span>{country.name}</span>
-                    </Name>
+                     <Name style={{paddingTop: '10px'}}>
+                    <img src={country.image} alt="Description of the image" style={{width: '25px', height: '20px'}}/>
+                    <span >{country.name}</span>
+                    </Name> 
                     <Stats>
-                        <span>{country.total}</span>
-                        <span>{country.percentage}</span>          
-                    </Stats>
+                        <span style={{width:"15%"}}>{country.total}</span>
+                        <span style={{textAlign:"left"}}>{country.percentage}</span>          
+                    </Stats>     
                 </Country>
 
                 ))}
      
             </Countries>
         </GlobalSales>
-        <Location>
         <Locations />
-        </Location>
+
     </SalesContainerWrapper>
 
     </div>
